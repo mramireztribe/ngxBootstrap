@@ -1,0 +1,20 @@
+<div class="row">
+    <div class="col-sm-4">
+       <div class="mb-2">
+          <progressbar [value]="value"></progressbar>
+       </div>
+    </div>
+    <div class="col-sm-4">
+       <div class="mb-2">
+          <progressbar [value]="value" type="warning"
+             [striped]="true">{{value}}%</progressbar>
+       </div>
+    </div>
+    <div class="col-sm-4">
+       <div class="mb-2">
+          <progressbar [value]="value" type="danger" 
+             [striped]="true" [animate]="true"
+             ><i>{{value}} / {{max}}</i></progressbar>
+       </div>
+    </div>
+ </div> 
